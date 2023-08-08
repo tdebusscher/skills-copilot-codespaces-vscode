@@ -1,12 +1,13 @@
 function skillsMember() {
   return {
     restrict: 'E',
-    templateUrl: 'templates/skills-member.html',
+    templateUrl: 'app/components/member/member.html',
+    controller: 'MemberController',
+    controllerAs: 'vm',
+    bindToController: true,
     scope: {
       member: '=',
-      skills: '=',
-      edit: '&',
-      remove: '&'
+      skills: '='
     }
   };
 }
